@@ -228,7 +228,7 @@ netfilter/iptables 笔记
 每条链在最底端都定义了默认规则。默认规则只会有一种状态：<code>ACCEPT</code>或者<code>DROP</code>。默认为<code>ACCEPT</code>。</p>
 <h2 id=iptables命令参数>iptables命令参数</h2>
 <p>格式：</p>
-<pre><code>iptables -操作方式 [链名] [条件匹配] [选项]
+<pre tabindex=0><code>iptables -操作方式 [链名] [条件匹配] [选项]
 
 iptables -[ACD] chain rule-specification [options]
 iptables -I chain [rulenum] rule-specification [options]
@@ -281,9 +281,9 @@ iptables -h (print this help information)
 <h2 id=实例>实例</h2>
 <h3 id=丢弃icmp协议包禁止ping>丢弃icmp协议包（禁止ping）</h3>
 <p>通过此规则实现禁止ping本机的效果</p>
-<pre><code>iptables -A INPUT -p icmp -j DROP
+<pre tabindex=0><code>iptables -A INPUT -p icmp -j DROP
 </code></pre><h3 id=解决应用程序无法从防火墙主机上对外建立新连接的问题>解决应用程序无法从防火墙主机上对外建立新连接的问题</h3>
-<pre><code>iptables -A INPUT -p tcp -m state ESTABLISHED -j ACCEPT
+<pre tabindex=0><code>iptables -A INPUT -p tcp -m state ESTABLISHED -j ACCEPT
 </code></pre>
 </div>
 </article>
@@ -391,7 +391,7 @@ iptables -h (print this help information)
 </div>
 <footer id=footer>
 <div class=footer-left>
-Copyright &copy; 2021 You
+Copyright &copy; 2022 You
 </div>
 <div class=footer-right>
 <nav>

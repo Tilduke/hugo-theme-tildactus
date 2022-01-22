@@ -163,7 +163,7 @@ composer中的autoload
 <p>Namespace prefixes must end in <code>\\</code> to avoid conflicts between similar prefixes. For example Foo would match classes in the FooBar namespace so the trailing backslashes solve the problem: <code>Foo\\</code> and <code>FooBar\\</code> are distinct.</p>
 <p>The PSR-4 references are all combined, during install/update, into a single key => value array which may be found in the generated file <code>vendor/composer/autoload_psr4.php</code>.</p>
 <p>实例：</p>
-<pre><code>{
+<pre tabindex=0><code>{
     &quot;autoload&quot;: {
         &quot;psr-4&quot;: {
             &quot;Monolog\\&quot;: &quot;src/&quot;,
@@ -172,13 +172,13 @@ composer中的autoload
     }
 }
 </code></pre><p>如果需要在多个目录下搜索相同前缀，可以以数组的形式指定。</p>
-<pre><code>{
+<pre tabindex=0><code>{
     &quot;autoload&quot;: {
         &quot;psr-4&quot;: { &quot;Monolog\\&quot;: [&quot;src/&quot;, &quot;lib/&quot;] }
     }
 }
 </code></pre><p>也可为所有命名空间指定默认文件夹：</p>
-<pre><code>{
+<pre tabindex=0><code>{
     &quot;autoload&quot;: {
         &quot;psr-4&quot;: { &quot;&quot;: &quot;src/&quot; }
     }
@@ -187,7 +187,7 @@ composer中的autoload
 <p><code>classmap</code> 引用的所有组合，都会在 <code>install/update</code> 过程中生成，并存储到 <code>vendor/composer/autoload_classmap.php</code> 文件中。这个 <code>map</code> 是经过扫描指定目录（同样支持直接精确到文件）中所有的 <code>.php</code> 和 <code>.inc</code> 文件里内置的类而得到的。</p>
 <p>你可以用 <code>classmap</code> 生成支持支持自定义加载的不遵循 <code>PSR-0/4</code> 规范的类库。要配置它指向需要的目录，以便能够准确搜索到类文件。</p>
 <p>实例：</p>
-<pre><code>{
+<pre tabindex=0><code>{
     &quot;autoload&quot;: {
         &quot;classmap&quot;: [&quot;src/&quot;, &quot;lib/&quot;, &quot;Something.php&quot;]
     }
@@ -289,7 +289,7 @@ composer中的autoload
 </div>
 <footer id=footer>
 <div class=footer-left>
-Copyright &copy; 2021 You
+Copyright &copy; 2022 You
 </div>
 <div class=footer-right>
 <nav>
